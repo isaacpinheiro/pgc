@@ -9,6 +9,6 @@ package br.edu.ufabc.pgc.util;
  *
  * @author isaac
  */
-public class HibernateUtil {
+public class EntityManagerUtil {
     
 }
