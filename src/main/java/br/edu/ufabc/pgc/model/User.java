@@ -47,7 +47,6 @@ public class User implements Serializable {
     @Column(name = "remember_created_at")
     private Date rememberCreatedAt;
     
-    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "sign_in_count")
     private int signInCount;
     
@@ -105,7 +104,7 @@ public class User implements Serializable {
     @Column(name = "bloqueado")
     private boolean bloqueado;
     
-    @Column(name = "centro")
+    @Column(name = "centros")
     private String centro;
     
     public User() {

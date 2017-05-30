@@ -47,8 +47,8 @@ public class UserController {
         uDAO.save(user);
     }
     
-    @RequestMapping(value="/user", method=RequestMethod.DELETE)
-    public void delete(String id) {
+    @RequestMapping(value="/user/{id}", method=RequestMethod.DELETE)
+    public void delete(@PathVariable("id") String id) {
         User user = uDAO.find(Long.parseLong(id));
         uDAO.delete(user);
     }
