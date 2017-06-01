@@ -46,7 +46,7 @@ public class Matricula implements Serializable {
     private String observacao;
     
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "updated_at", nullable = false)
+    @Column(name = "created_at", nullable = false)
     private Date createdAt;
     
     @Temporal(TemporalType.TIMESTAMP)
