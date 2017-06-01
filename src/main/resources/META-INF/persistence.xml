@@ -2,7 +2,33 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="pgc" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.edu.ufabc.pgc.model.AlunoProjeto</class>
+    <class>br.edu.ufabc.pgc.model.Anexo</class>
+    <class>br.edu.ufabc.pgc.model.Arquivo</class>
+    <class>br.edu.ufabc.pgc.model.Autoria</class>
+    <class>br.edu.ufabc.pgc.model.BoardDocument</class>
+    <class>br.edu.ufabc.pgc.model.BoardMembers</class>
+    <class>br.edu.ufabc.pgc.model.CertificadoNovo</class>
+    <class>br.edu.ufabc.pgc.model.Certificate</class>
+    <class>br.edu.ufabc.pgc.model.Disciplina</class>
+    <class>br.edu.ufabc.pgc.model.DueDate</class>
+    <class>br.edu.ufabc.pgc.model.Evaluation</class>
+    <class>br.edu.ufabc.pgc.model.Finalizado</class>
+    <class>br.edu.ufabc.pgc.model.Individual</class>
+    <class>br.edu.ufabc.pgc.model.Informacao</class>
+    <class>br.edu.ufabc.pgc.model.Interrompido</class>
+    <class>br.edu.ufabc.pgc.model.Manual</class>
+    <class>br.edu.ufabc.pgc.model.Matricula</class>
+    <class>br.edu.ufabc.pgc.model.Member</class>
+    <class>br.edu.ufabc.pgc.model.Model</class>
+    <class>br.edu.ufabc.pgc.model.Mudanca</class>
+    <class>br.edu.ufabc.pgc.model.NotaFinal</class>
+    <class>br.edu.ufabc.pgc.model.Notification</class>
+    <class>br.edu.ufabc.pgc.model.Project</class>
+    <class>br.edu.ufabc.pgc.model.SeCertificate</class>
+    <class>br.edu.ufabc.pgc.model.Session</class>
     <class>br.edu.ufabc.pgc.model.User</class>
+    <class>br.edu.ufabc.pgc.model.VerificacaoCertificado</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/graduation_development?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
