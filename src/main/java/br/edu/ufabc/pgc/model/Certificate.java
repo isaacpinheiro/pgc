@@ -20,17 +20,37 @@ import javax.persistence.Column;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+@Entity
+@Table(name = "certificates")
 public class Certificate implements Serializable {
     
     public static final long serialVersionUID = 1L;
     
+    @Id
+    @Column(name = "id", nullable = false)
     private Long id;
+    
+    @Column(name = "duedate_id")
     private String dueDateId;
+    
+    @Column(name = "orientador_id")
     private String orientadorId;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "created_at", nullable = false)
     private Date createdAt;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "updated_at", nullable = false)
     private Date updatedAt;
+    
+    @Column(name = "seguranca")
     private String seguranca;
+    
+    @Column(name = "vercod")
     private String vercod;
+    
+    @Column(name = "data")
     private String data;
     
     public Certificate() {
