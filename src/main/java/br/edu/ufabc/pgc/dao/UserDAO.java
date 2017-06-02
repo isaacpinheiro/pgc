@@ -11,6 +11,7 @@ package br.edu.ufabc.pgc.dao;
  */
 
 import java.util.List;
+import java.util.Date;
 import javax.persistence.EntityManager;
 
 import br.edu.ufabc.pgc.util.EntityManagerUtil;
@@ -39,6 +40,15 @@ public class UserDAO {
     }
     
     public void save(User obj) {
+        
+        Date d = new Date();
+        
+        if (obj.getId() == null) {
+            obj.setCreatedAt(d);
+            obj.setUpdatedAt(obj.getCreatedAt());
+        } else {
+            obj.setUpdatedAt(d);
+        }
         
         try {
             em.getTransaction().begin();
